@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D18152CB1BFEBDE300910896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D18152CA1BFEBDE300910896 /* main.m */; };
+		D18152CE1BFEBDE300910896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D18152CD1BFEBDE300910896 /* AppDelegate.m */; };
+		D18152D11BFEBDE300910896 /* FeSpinerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D18152CF1BFEBDE300910896 /* FeSpinerApp.xcdatamodeld */; };
+		D18152D41BFEBDE300910896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18152D31BFEBDE300910896 /* ViewController.m */; };
+		D18152D71BFEBDE300910896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18152D51BFEBDE300910896 /* Main.storyboard */; };
+		D18152D91BFEBDE300910896 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18152D81BFEBDE300910896 /* Images.xcassets */; };
+		D18152DC1BFEBDE300910896 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18152DA1BFEBDE300910896 /* LaunchScreen.xib */; };
+		D18152E81BFEBDE400910896 /* FeSpinerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D18152E71BFEBDE400910896 /* FeSpinerAppTests.m */; };
+		D18152F21BFEBE4200910896 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18152F11BFEBE4200910896 /* QuartzCore.framework */; };
+		D18152F41BFEBE5200910896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18152F31BFEBE5200910896 /* Foundation.framework */; };
+		D18152F61BFEBE5E00910896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18152F51BFEBE5E00910896 /* CoreGraphics.framework */; };
+		D18152F81BFEBE6A00910896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18152F71BFEBE6A00910896 /* UIKit.framework */; };
+		D18153351BFEC34E00910896 /* CabinCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D181532D1BFEC34E00910896 /* CabinCondensed-Bold.ttf */; };
+		D18153361BFEC34E00910896 /* Neou-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D181532E1BFEC34E00910896 /* Neou-Thin.ttf */; };
+		D18153371BFEC34E00910896 /* WifiMan_Sign_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D181532F1BFEC34E00910896 /* WifiMan_Sign_1@2x.png */; };
+		D18153381BFEC34E00910896 /* WifiMan_Sign_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D18153301BFEC34E00910896 /* WifiMan_Sign_2@2x.png */; };
+		D18153391BFEC34E00910896 /* WifiMan_Sign_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D18153311BFEC34E00910896 /* WifiMan_Sign_3@2x.png */; };
+		D181533A1BFEC34E00910896 /* WifiMan_Sign_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D18153321BFEC34E00910896 /* WifiMan_Sign_4@2x.png */; };
+		D181533B1BFEC34E00910896 /* wifimanhub_grayscale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D18153331BFEC34E00910896 /* wifimanhub_grayscale@2x.png */; };
+		D181533C1BFEC34E00910896 /* wifimanhub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D18153341BFEC34E00910896 /* wifimanhub@2x.png */; };
+		D18153421BFEC45000910896 /* FeHandwriting.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153411BFEC45000910896 /* FeHandwriting.m */; };
+		D18153451BFEC47700910896 /* FeRollingLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153441BFEC47700910896 /* FeRollingLoader.m */; };
+		D18153471BFEC48500910896 /* FeZeroLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153461BFEC48500910896 /* FeZeroLoader.m */; };
+		D181534B1BFEC4A000910896 /* FeEqualize.m in Sources */ = {isa = PBXBuildFile; fileRef = D181534A1BFEC4A000910896 /* FeEqualize.m */; };
+		D181534E1BFEC4B000910896 /* FeHourGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = D181534D1BFEC4B000910896 /* FeHourGlass.m */; };
+		D18153511BFEC4D100910896 /* FeThreeDotGlow.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153501BFEC4D100910896 /* FeThreeDotGlow.m */; };
+		D18153561BFEC4EA00910896 /* FeVietNamBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153531BFEC4EA00910896 /* FeVietNamBar.m */; };
+		D18153571BFEC4EA00910896 /* FeVietNamLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153551BFEC4EA00910896 /* FeVietNamLoader.m */; };
+		D181535C1BFEC50200910896 /* FeLoadingIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153591BFEC50200910896 /* FeLoadingIcon.m */; };
+		D181535D1BFEC50200910896 /* FeLoadingIconBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D181535B1BFEC50200910896 /* FeLoadingIconBox.m */; };
+		D18153601BFEC54800910896 /* FeSpinnerTenDot.m in Sources */ = {isa = PBXBuildFile; fileRef = D181535F1BFEC54800910896 /* FeSpinnerTenDot.m */; };
+		D18153631BFEC55E00910896 /* FeTenDot.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153621BFEC55E00910896 /* FeTenDot.m */; };
+		D18153661BFEC58300910896 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153651BFEC58300910896 /* FXBlurView.m */; };
+		D18153691BFEC59200910896 /* UIColor+flat.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153681BFEC59200910896 /* UIColor+flat.m */; };
+		D181536C1BFEC5BB00910896 /* FeHandwritingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D181536B1BFEC5BB00910896 /* FeHandwritingViewController.m */; };
+		D181536F1BFEC5D200910896 /* FeRollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D181536E1BFEC5D200910896 /* FeRollingViewController.m */; };
+		D18153721BFEC5E200910896 /* FeZeroLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153711BFEC5E200910896 /* FeZeroLoaderViewController.m */; };
+		D18153751BFEC5ED00910896 /* FeEqualizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153741BFEC5ED00910896 /* FeEqualizerViewController.m */; };
+		D18153781BFEC5FC00910896 /* FeHourGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153771BFEC5FC00910896 /* FeHourGlassViewController.m */; };
+		D181537B1BFEC61100910896 /* FeVietNamLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D181537A1BFEC61100910896 /* FeVietNamLoaderViewController.m */; };
+		D181537E1BFEC62300910896 /* FeThreeDotGlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D181537D1BFEC62300910896 /* FeThreeDotGlowViewController.m */; };
+		D18153811BFEC70000910896 /* FeWifiManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153801BFEC70000910896 /* FeWifiManViewController.m */; };
+		D18153841BFEC73900910896 /* FeLoadingBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153831BFEC73900910896 /* FeLoadingBoxViewController.m */; };
+		D18153871BFEC74A00910896 /* FeSpinnerTenDotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153861BFEC74A00910896 /* FeSpinnerTenDotViewController.m */; };
+		D18153931BFECA4900910896 /* FeWifiManHub.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153921BFECA4900910896 /* FeWifiManHub.m */; };
+		D18153951BFECA8800910896 /* FeWifiManHub.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18153941BFECA8800910896 /* FeWifiManHub.xib */; };
+		D18153CD1BFEE61400910896 /* Feasd.m in Sources */ = {isa = PBXBuildFile; fileRef = D18153CC1BFEE61400910896 /* Feasd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D18152E21BFEBDE400910896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18152BD1BFEBDE300910896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D18152C41BFEBDE300910896;
+			remoteInfo = FeSpinerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D18152C51BFEBDE300910896 /* FeSpinerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeSpinerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18152C91BFEBDE300910896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18152CA1BFEBDE300910896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D18152CC1BFEBDE300910896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D18152CD1BFEBDE300910896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D18152D01BFEBDE300910896 /* FeSpinerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeSpinerApp.xcdatamodel; sourceTree = "<group>"; };
+		D18152D21BFEBDE300910896 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D18152D31BFEBDE300910896 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D18152D61BFEBDE300910896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D18152D81BFEBDE300910896 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D18152DB1BFEBDE300910896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D18152E11BFEBDE400910896 /* FeSpinerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeSpinerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18152E61BFEBDE400910896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18152E71BFEBDE400910896 /* FeSpinerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeSpinerAppTests.m; sourceTree = "<group>"; };
+		D18152F11BFEBE4200910896 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D18152F31BFEBE5200910896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D18152F51BFEBE5E00910896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D18152F71BFEBE6A00910896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D181532D1BFEC34E00910896 /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		D181532E1BFEC34E00910896 /* Neou-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neou-Thin.ttf"; sourceTree = "<group>"; };
+		D181532F1BFEC34E00910896 /* WifiMan_Sign_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WifiMan_Sign_1@2x.png"; sourceTree = "<group>"; };
+		D18153301BFEC34E00910896 /* WifiMan_Sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WifiMan_Sign_2@2x.png"; sourceTree = "<group>"; };
+		D18153311BFEC34E00910896 /* WifiMan_Sign_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WifiMan_Sign_3@2x.png"; sourceTree = "<group>"; };
+		D18153321BFEC34E00910896 /* WifiMan_Sign_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WifiMan_Sign_4@2x.png"; sourceTree = "<group>"; };
+		D18153331BFEC34E00910896 /* wifimanhub_grayscale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wifimanhub_grayscale@2x.png"; sourceTree = "<group>"; };
+		D18153341BFEC34E00910896 /* wifimanhub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wifimanhub@2x.png"; sourceTree = "<group>"; };
+		D18153401BFEC45000910896 /* FeHandwriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeHandwriting.h; sourceTree = "<group>"; };
+		D18153411BFEC45000910896 /* FeHandwriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeHandwriting.m; sourceTree = "<group>"; };
+		D18153431BFEC47700910896 /* FeRollingLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeRollingLoader.h; sourceTree = "<group>"; };
+		D18153441BFEC47700910896 /* FeRollingLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeRollingLoader.m; sourceTree = "<group>"; };
+		D18153461BFEC48500910896 /* FeZeroLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeZeroLoader.m; sourceTree = "<group>"; };
+		D18153481BFEC49200910896 /* FeZeroLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeZeroLoader.h; sourceTree = "<group>"; };
+		D18153491BFEC4A000910896 /* FeEqualize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeEqualize.h; sourceTree = "<group>"; };
+		D181534A1BFEC4A000910896 /* FeEqualize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeEqualize.m; sourceTree = "<group>"; };
+		D181534C1BFEC4B000910896 /* FeHourGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeHourGlass.h; sourceTree = "<group>"; };
+		D181534D1BFEC4B000910896 /* FeHourGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeHourGlass.m; sourceTree = "<group>"; };
+		D181534F1BFEC4D100910896 /* FeThreeDotGlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeThreeDotGlow.h; sourceTree = "<group>"; };
+		D18153501BFEC4D100910896 /* FeThreeDotGlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeThreeDotGlow.m; sourceTree = "<group>"; };
+		D18153521BFEC4EA00910896 /* FeVietNamBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeVietNamBar.h; sourceTree = "<group>"; };
+		D18153531BFEC4EA00910896 /* FeVietNamBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeVietNamBar.m; sourceTree = "<group>"; };
+		D18153541BFEC4EA00910896 /* FeVietNamLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeVietNamLoader.h; sourceTree = "<group>"; };
+		D18153551BFEC4EA00910896 /* FeVietNamLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeVietNamLoader.m; sourceTree = "<group>"; };
+		D18153581BFEC50200910896 /* FeLoadingIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeLoadingIcon.h; sourceTree = "<group>"; };
+		D18153591BFEC50200910896 /* FeLoadingIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeLoadingIcon.m; sourceTree = "<group>"; };
+		D181535A1BFEC50200910896 /* FeLoadingIconBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeLoadingIconBox.h; sourceTree = "<group>"; };
+		D181535B1BFEC50200910896 /* FeLoadingIconBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeLoadingIconBox.m; sourceTree = "<group>"; };
+		D181535E1BFEC54800910896 /* FeSpinnerTenDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeSpinnerTenDot.h; sourceTree = "<group>"; };
+		D181535F1BFEC54800910896 /* FeSpinnerTenDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeSpinnerTenDot.m; sourceTree = "<group>"; };
+		D18153611BFEC55E00910896 /* FeTenDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeTenDot.h; sourceTree = "<group>"; };
+		D18153621BFEC55E00910896 /* FeTenDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeTenDot.m; sourceTree = "<group>"; };
+		D18153641BFEC58300910896 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		D18153651BFEC58300910896 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		D18153671BFEC59200910896 /* UIColor+flat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+flat.h"; sourceTree = "<group>"; };
+		D18153681BFEC59200910896 /* UIColor+flat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+flat.m"; sourceTree = "<group>"; };
+		D181536A1BFEC5BB00910896 /* FeHandwritingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeHandwritingViewController.h; sourceTree = "<group>"; };
+		D181536B1BFEC5BB00910896 /* FeHandwritingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeHandwritingViewController.m; sourceTree = "<group>"; };
+		D181536D1BFEC5D200910896 /* FeRollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeRollingViewController.h; sourceTree = "<group>"; };
+		D181536E1BFEC5D200910896 /* FeRollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeRollingViewController.m; sourceTree = "<group>"; };
+		D18153701BFEC5E200910896 /* FeZeroLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeZeroLoaderViewController.h; sourceTree = "<group>"; };
+		D18153711BFEC5E200910896 /* FeZeroLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeZeroLoaderViewController.m; sourceTree = "<group>"; };
+		D18153731BFEC5ED00910896 /* FeEqualizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeEqualizerViewController.h; sourceTree = "<group>"; };
+		D18153741BFEC5ED00910896 /* FeEqualizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeEqualizerViewController.m; sourceTree = "<group>"; };
+		D18153761BFEC5FC00910896 /* FeHourGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeHourGlassViewController.h; sourceTree = "<group>"; };
+		D18153771BFEC5FC00910896 /* FeHourGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeHourGlassViewController.m; sourceTree = "<group>"; };
+		D18153791BFEC61100910896 /* FeVietNamLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeVietNamLoaderViewController.h; sourceTree = "<group>"; };
+		D181537A1BFEC61100910896 /* FeVietNamLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeVietNamLoaderViewController.m; sourceTree = "<group>"; };
+		D181537C1BFEC62300910896 /* FeThreeDotGlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeThreeDotGlowViewController.h; sourceTree = "<group>"; };
+		D181537D1BFEC62300910896 /* FeThreeDotGlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeThreeDotGlowViewController.m; sourceTree = "<group>"; };
+		D181537F1BFEC70000910896 /* FeWifiManViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeWifiManViewController.h; sourceTree = "<group>"; };
+		D18153801BFEC70000910896 /* FeWifiManViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeWifiManViewController.m; sourceTree = "<group>"; };
+		D18153821BFEC73900910896 /* FeLoadingBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeLoadingBoxViewController.h; sourceTree = "<group>"; };
+		D18153831BFEC73900910896 /* FeLoadingBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeLoadingBoxViewController.m; sourceTree = "<group>"; };
+		D18153851BFEC74A00910896 /* FeSpinnerTenDotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeSpinnerTenDotViewController.h; sourceTree = "<group>"; };
+		D18153861BFEC74A00910896 /* FeSpinnerTenDotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeSpinnerTenDotViewController.m; sourceTree = "<group>"; };
+		D18153911BFECA4900910896 /* FeWifiManHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeWifiManHub.h; sourceTree = "<group>"; };
+		D18153921BFECA4900910896 /* FeWifiManHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeWifiManHub.m; sourceTree = "<group>"; };
+		D18153941BFECA8800910896 /* FeWifiManHub.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeWifiManHub.xib; sourceTree = "<group>"; };
+		D18153CB1BFEE61400910896 /* Feasd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feasd.h; sourceTree = "<group>"; };
+		D18153CC1BFEE61400910896 /* Feasd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feasd.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D18152C21BFEBDE300910896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18152F81BFEBE6A00910896 /* UIKit.framework in Frameworks */,
+				D18152F61BFEBE5E00910896 /* CoreGraphics.framework in Frameworks */,
+				D18152F41BFEBE5200910896 /* Foundation.framework in Frameworks */,
+				D18152F21BFEBE4200910896 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18152DE1BFEBDE400910896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D18152BC1BFEBDE300910896 = {
+			isa = PBXGroup;
+			children = (
+				D18152FD1BFEBF5D00910896 /* Frameworks */,
+				D18152C71BFEBDE300910896 /* FeSpinerApp */,
+				D18152E41BFEBDE400910896 /* FeSpinerAppTests */,
+				D18152C61BFEBDE300910896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D18152C61BFEBDE300910896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18152C51BFEBDE300910896 /* FeSpinerApp.app */,
+				D18152E11BFEBDE400910896 /* FeSpinerAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D18152C71BFEBDE300910896 /* FeSpinerApp */ = {
+			isa = PBXGroup;
+			children = (
+				D18153CB1BFEE61400910896 /* Feasd.h */,
+				D18153CC1BFEE61400910896 /* Feasd.m */,
+				D18152F91BFEBF3300910896 /* FeSpinner */,
+				D18152FE1BFEBF8B00910896 /* View Controller */,
+				D18152CC1BFEBDE300910896 /* AppDelegate.h */,
+				D18152CD1BFEBDE300910896 /* AppDelegate.m */,
+				D18152D21BFEBDE300910896 /* ViewController.h */,
+				D18152D31BFEBDE300910896 /* ViewController.m */,
+				D18152D51BFEBDE300910896 /* Main.storyboard */,
+				D18152D81BFEBDE300910896 /* Images.xcassets */,
+				D18152DA1BFEBDE300910896 /* LaunchScreen.xib */,
+				D18152CF1BFEBDE300910896 /* FeSpinerApp.xcdatamodeld */,
+				D18152C81BFEBDE300910896 /* Supporting Files */,
+			);
+			path = FeSpinerApp;
+			sourceTree = "<group>";
+		};
+		D18152C81BFEBDE300910896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D18152C91BFEBDE300910896 /* Info.plist */,
+				D18152CA1BFEBDE300910896 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D18152E41BFEBDE400910896 /* FeSpinerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D18152E71BFEBDE400910896 /* FeSpinerAppTests.m */,
+				D18152E51BFEBDE400910896 /* Supporting Files */,
+			);
+			path = FeSpinerAppTests;
+			sourceTree = "<group>";
+		};
+		D18152E51BFEBDE400910896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D18152E61BFEBDE400910896 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D18152F91BFEBF3300910896 /* FeSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				D18152FC1BFEBF5600910896 /* Tool */,
+				D18152FB1BFEBF4D00910896 /* Type */,
+				D18152FA1BFEBF4100910896 /* Resource */,
+			);
+			name = FeSpinner;
+			sourceTree = "<group>";
+		};
+		D18152FA1BFEBF4100910896 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D181532D1BFEC34E00910896 /* CabinCondensed-Bold.ttf */,
+				D181532E1BFEC34E00910896 /* Neou-Thin.ttf */,
+				D181532F1BFEC34E00910896 /* WifiMan_Sign_1@2x.png */,
+				D18153301BFEC34E00910896 /* WifiMan_Sign_2@2x.png */,
+				D18153311BFEC34E00910896 /* WifiMan_Sign_3@2x.png */,
+				D18153321BFEC34E00910896 /* WifiMan_Sign_4@2x.png */,
+				D18153331BFEC34E00910896 /* wifimanhub_grayscale@2x.png */,
+				D18153341BFEC34E00910896 /* wifimanhub@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		D18152FB1BFEBF4D00910896 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				D18153191BFEC11600910896 /* Handwriting */,
+				D18153181BFEC10D00910896 /* Rolling */,
+				D18153171BFEC10700910896 /* Zero */,
+				D18153161BFEC0FC00910896 /* Equalize */,
+				D18153151BFEC0F200910896 /* HourGlass */,
+				D18153141BFEC0E400910896 /* WifiManHub */,
+				D18153131BFEC0D600910896 /* ThreeDotGlow */,
+				D18153121BFEC0C600910896 /* VietNamLoader */,
+				D18153111BFEC0B900910896 /* Loading icon */,
+				D18153101BFEC0B000910896 /* Ten Dot */,
+			);
+			name = Type;
+			sourceTree = "<group>";
+		};
+		D18152FC1BFEBF5600910896 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D18153091BFEC03D00910896 /* Blur View */,
+				D18153671BFEC59200910896 /* UIColor+flat.h */,
+				D18153681BFEC59200910896 /* UIColor+flat.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		D18152FD1BFEBF5D00910896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D18152F71BFEBE6A00910896 /* UIKit.framework */,
+				D18152F51BFEBE5E00910896 /* CoreGraphics.framework */,
+				D18152F31BFEBE5200910896 /* Foundation.framework */,
+				D18152F11BFEBE4200910896 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D18152FE1BFEBF8B00910896 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D18153081BFEC02800910896 /* Handwriting */,
+				D18153071BFEC01800910896 /* Rolling */,
+				D18153061BFEC00F00910896 /* Zero */,
+				D18153051BFEC00300910896 /* Equalizer */,
+				D18153041BFEBFF600910896 /* HourGlass */,
+				D18153011BFEBFCE00910896 /* WifiManHub */,
+				D18153021BFEBFDC00910896 /* Three Dot Glow */,
+				D18153031BFEBFE800910896 /* Viet Nam Loader */,
+				D18153001BFEBFC000910896 /* Loading Box */,
+				D18152FF1BFEBFA500910896 /* Spinner Ten Dot */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		D18152FF1BFEBFA500910896 /* Spinner Ten Dot */ = {
+			isa = PBXGroup;
+			children = (
+				D18153851BFEC74A00910896 /* FeSpinnerTenDotViewController.h */,
+				D18153861BFEC74A00910896 /* FeSpinnerTenDotViewController.m */,
+			);
+			name = "Spinner Ten Dot";
+			sourceTree = "<group>";
+		};
+		D18153001BFEBFC000910896 /* Loading Box */ = {
+			isa = PBXGroup;
+			children = (
+				D18153821BFEC73900910896 /* FeLoadingBoxViewController.h */,
+				D18153831BFEC73900910896 /* FeLoadingBoxViewController.m */,
+			);
+			name = "Loading Box";
+			sourceTree = "<group>";
+		};
+		D18153011BFEBFCE00910896 /* WifiManHub */ = {
+			isa = PBXGroup;
+			children = (
+				D181537F1BFEC70000910896 /* FeWifiManViewController.h */,
+				D18153801BFEC70000910896 /* FeWifiManViewController.m */,
+			);
+			name = WifiManHub;
+			sourceTree = "<group>";
+		};
+		D18153021BFEBFDC00910896 /* Three Dot Glow */ = {
+			isa = PBXGroup;
+			children = (
+				D181537C1BFEC62300910896 /* FeThreeDotGlowViewController.h */,
+				D181537D1BFEC62300910896 /* FeThreeDotGlowViewController.m */,
+			);
+			name = "Three Dot Glow";
+			sourceTree = "<group>";
+		};
+		D18153031BFEBFE800910896 /* Viet Nam Loader */ = {
+			isa = PBXGroup;
+			children = (
+				D18153791BFEC61100910896 /* FeVietNamLoaderViewController.h */,
+				D181537A1BFEC61100910896 /* FeVietNamLoaderViewController.m */,
+			);
+			name = "Viet Nam Loader";
+			sourceTree = "<group>";
+		};
+		D18153041BFEBFF600910896 /* HourGlass */ = {
+			isa = PBXGroup;
+			children = (
+				D18153761BFEC5FC00910896 /* FeHourGlassViewController.h */,
+				D18153771BFEC5FC00910896 /* FeHourGlassViewController.m */,
+			);
+			name = HourGlass;
+			sourceTree = "<group>";
+		};
+		D18153051BFEC00300910896 /* Equalizer */ = {
+			isa = PBXGroup;
+			children = (
+				D18153731BFEC5ED00910896 /* FeEqualizerViewController.h */,
+				D18153741BFEC5ED00910896 /* FeEqualizerViewController.m */,
+			);
+			name = Equalizer;
+			sourceTree = "<group>";
+		};
+		D18153061BFEC00F00910896 /* Zero */ = {
+			isa = PBXGroup;
+			children = (
+				D18153701BFEC5E200910896 /* FeZeroLoaderViewController.h */,
+				D18153711BFEC5E200910896 /* FeZeroLoaderViewController.m */,
+			);
+			name = Zero;
+			sourceTree = "<group>";
+		};
+		D18153071BFEC01800910896 /* Rolling */ = {
+			isa = PBXGroup;
+			children = (
+				D181536D1BFEC5D200910896 /* FeRollingViewController.h */,
+				D181536E1BFEC5D200910896 /* FeRollingViewController.m */,
+			);
+			name = Rolling;
+			sourceTree = "<group>";
+		};
+		D18153081BFEC02800910896 /* Handwriting */ = {
+			isa = PBXGroup;
+			children = (
+				D181536A1BFEC5BB00910896 /* FeHandwritingViewController.h */,
+				D181536B1BFEC5BB00910896 /* FeHandwritingViewController.m */,
+			);
+			name = Handwriting;
+			sourceTree = "<group>";
+		};
+		D18153091BFEC03D00910896 /* Blur View */ = {
+			isa = PBXGroup;
+			children = (
+				D18153641BFEC58300910896 /* FXBlurView.h */,
+				D18153651BFEC58300910896 /* FXBlurView.m */,
+			);
+			name = "Blur View";
+			sourceTree = "<group>";
+		};
+		D18153101BFEC0B000910896 /* Ten Dot */ = {
+			isa = PBXGroup;
+			children = (
+				D18153611BFEC55E00910896 /* FeTenDot.h */,
+				D18153621BFEC55E00910896 /* FeTenDot.m */,
+				D181535E1BFEC54800910896 /* FeSpinnerTenDot.h */,
+				D181535F1BFEC54800910896 /* FeSpinnerTenDot.m */,
+			);
+			name = "Ten Dot";
+			sourceTree = "<group>";
+		};
+		D18153111BFEC0B900910896 /* Loading icon */ = {
+			isa = PBXGroup;
+			children = (
+				D18153581BFEC50200910896 /* FeLoadingIcon.h */,
+				D18153591BFEC50200910896 /* FeLoadingIcon.m */,
+				D181535A1BFEC50200910896 /* FeLoadingIconBox.h */,
+				D181535B1BFEC50200910896 /* FeLoadingIconBox.m */,
+			);
+			name = "Loading icon";
+			sourceTree = "<group>";
+		};
+		D18153121BFEC0C600910896 /* VietNamLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D18153521BFEC4EA00910896 /* FeVietNamBar.h */,
+				D18153531BFEC4EA00910896 /* FeVietNamBar.m */,
+				D18153541BFEC4EA00910896 /* FeVietNamLoader.h */,
+				D18153551BFEC4EA00910896 /* FeVietNamLoader.m */,
+			);
+			name = VietNamLoader;
+			sourceTree = "<group>";
+		};
+		D18153131BFEC0D600910896 /* ThreeDotGlow */ = {
+			isa = PBXGroup;
+			children = (
+				D181534F1BFEC4D100910896 /* FeThreeDotGlow.h */,
+				D18153501BFEC4D100910896 /* FeThreeDotGlow.m */,
+			);
+			name = ThreeDotGlow;
+			sourceTree = "<group>";
+		};
+		D18153141BFEC0E400910896 /* WifiManHub */ = {
+			isa = PBXGroup;
+			children = (
+				D18153941BFECA8800910896 /* FeWifiManHub.xib */,
+				D18153911BFECA4900910896 /* FeWifiManHub.h */,
+				D18153921BFECA4900910896 /* FeWifiManHub.m */,
+			);
+			name = WifiManHub;
+			sourceTree = "<group>";
+		};
+		D18153151BFEC0F200910896 /* HourGlass */ = {
+			isa = PBXGroup;
+			children = (
+				D181534C1BFEC4B000910896 /* FeHourGlass.h */,
+				D181534D1BFEC4B000910896 /* FeHourGlass.m */,
+			);
+			name = HourGlass;
+			sourceTree = "<group>";
+		};
+		D18153161BFEC0FC00910896 /* Equalize */ = {
+			isa = PBXGroup;
+			children = (
+				D18153491BFEC4A000910896 /* FeEqualize.h */,
+				D181534A1BFEC4A000910896 /* FeEqualize.m */,
+			);
+			name = Equalize;
+			sourceTree = "<group>";
+		};
+		D18153171BFEC10700910896 /* Zero */ = {
+			isa = PBXGroup;
+			children = (
+				D18153481BFEC49200910896 /* FeZeroLoader.h */,
+				D18153461BFEC48500910896 /* FeZeroLoader.m */,
+			);
+			name = Zero;
+			sourceTree = "<group>";
+		};
+		D18153181BFEC10D00910896 /* Rolling */ = {
+			isa = PBXGroup;
+			children = (
+				D18153431BFEC47700910896 /* FeRollingLoader.h */,
+				D18153441BFEC47700910896 /* FeRollingLoader.m */,
+			);
+			name = Rolling;
+			sourceTree = "<group>";
+		};
+		D18153191BFEC11600910896 /* Handwriting */ = {
+			isa = PBXGroup;
+			children = (
+				D18153401BFEC45000910896 /* FeHandwriting.h */,
+				D18153411BFEC45000910896 /* FeHandwriting.m */,
+			);
+			name = Handwriting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D18152C41BFEBDE300910896 /* FeSpinerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18152EB1BFEBDE400910896 /* Build configuration list for PBXNativeTarget "FeSpinerApp" */;
+			buildPhases = (
+				D18152C11BFEBDE300910896 /* Sources */,
+				D18152C21BFEBDE300910896 /* Frameworks */,
+				D18152C31BFEBDE300910896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeSpinerApp;
+			productName = FeSpinerApp;
+			productReference = D18152C51BFEBDE300910896 /* FeSpinerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D18152E01BFEBDE400910896 /* FeSpinerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18152EE1BFEBDE400910896 /* Build configuration list for PBXNativeTarget "FeSpinerAppTests" */;
+			buildPhases = (
+				D18152DD1BFEBDE400910896 /* Sources */,
+				D18152DE1BFEBDE400910896 /* Frameworks */,
+				D18152DF1BFEBDE400910896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18152E31BFEBDE400910896 /* PBXTargetDependency */,
+			);
+			name = FeSpinerAppTests;
+			productName = FeSpinerAppTests;
+			productReference = D18152E11BFEBDE400910896 /* FeSpinerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D18152BD1BFEBDE300910896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = jellastar;
+				TargetAttributes = {
+					D18152C41BFEBDE300910896 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D18152E01BFEBDE400910896 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D18152C41BFEBDE300910896;
+					};
+				};
+			};
+			buildConfigurationList = D18152C01BFEBDE300910896 /* Build configuration list for PBXProject "FeSpinerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D18152BC1BFEBDE300910896;
+			productRefGroup = D18152C61BFEBDE300910896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D18152C41BFEBDE300910896 /* FeSpinerApp */,
+				D18152E01BFEBDE400910896 /* FeSpinerAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D18152C31BFEBDE300910896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D181533C1BFEC34E00910896 /* wifimanhub@2x.png in Resources */,
+				D18153361BFEC34E00910896 /* Neou-Thin.ttf in Resources */,
+				D18152D71BFEBDE300910896 /* Main.storyboard in Resources */,
+				D18153351BFEC34E00910896 /* CabinCondensed-Bold.ttf in Resources */,
+				D18153371BFEC34E00910896 /* WifiMan_Sign_1@2x.png in Resources */,
+				D181533B1BFEC34E00910896 /* wifimanhub_grayscale@2x.png in Resources */,
+				D18152DC1BFEBDE300910896 /* LaunchScreen.xib in Resources */,
+				D181533A1BFEC34E00910896 /* WifiMan_Sign_4@2x.png in Resources */,
+				D18152D91BFEBDE300910896 /* Images.xcassets in Resources */,
+				D18153381BFEC34E00910896 /* WifiMan_Sign_2@2x.png in Resources */,
+				D18153951BFECA8800910896 /* FeWifiManHub.xib in Resources */,
+				D18153391BFEC34E00910896 /* WifiMan_Sign_3@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18152DF1BFEBDE400910896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D18152C11BFEBDE300910896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18153931BFECA4900910896 /* FeWifiManHub.m in Sources */,
+				D181535C1BFEC50200910896 /* FeLoadingIcon.m in Sources */,
+				D181536F1BFEC5D200910896 /* FeRollingViewController.m in Sources */,
+				D18153751BFEC5ED00910896 /* FeEqualizerViewController.m in Sources */,
+				D18153421BFEC45000910896 /* FeHandwriting.m in Sources */,
+				D18152CE1BFEBDE300910896 /* AppDelegate.m in Sources */,
+				D18153811BFEC70000910896 /* FeWifiManViewController.m in Sources */,
+				D18153511BFEC4D100910896 /* FeThreeDotGlow.m in Sources */,
+				D181534B1BFEC4A000910896 /* FeEqualize.m in Sources */,
+				D18153841BFEC73900910896 /* FeLoadingBoxViewController.m in Sources */,
+				D181536C1BFEC5BB00910896 /* FeHandwritingViewController.m in Sources */,
+				D181537E1BFEC62300910896 /* FeThreeDotGlowViewController.m in Sources */,
+				D18152CB1BFEBDE300910896 /* main.m in Sources */,
+				D181534E1BFEC4B000910896 /* FeHourGlass.m in Sources */,
+				D18153721BFEC5E200910896 /* FeZeroLoaderViewController.m in Sources */,
+				D18153CD1BFEE61400910896 /* Feasd.m in Sources */,
+				D18153661BFEC58300910896 /* FXBlurView.m in Sources */,
+				D18153601BFEC54800910896 /* FeSpinnerTenDot.m in Sources */,
+				D18153781BFEC5FC00910896 /* FeHourGlassViewController.m in Sources */,
+				D18153871BFEC74A00910896 /* FeSpinnerTenDotViewController.m in Sources */,
+				D18153561BFEC4EA00910896 /* FeVietNamBar.m in Sources */,
+				D181537B1BFEC61100910896 /* FeVietNamLoaderViewController.m in Sources */,
+				D18153691BFEC59200910896 /* UIColor+flat.m in Sources */,
+				D18153471BFEC48500910896 /* FeZeroLoader.m in Sources */,
+				D18152D41BFEBDE300910896 /* ViewController.m in Sources */,
+				D181535D1BFEC50200910896 /* FeLoadingIconBox.m in Sources */,
+				D18152D11BFEBDE300910896 /* FeSpinerApp.xcdatamodeld in Sources */,
+				D18153571BFEC4EA00910896 /* FeVietNamLoader.m in Sources */,
+				D18153631BFEC55E00910896 /* FeTenDot.m in Sources */,
+				D18153451BFEC47700910896 /* FeRollingLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18152DD1BFEBDE400910896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18152E81BFEBDE400910896 /* FeSpinerAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D18152E31BFEBDE400910896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D18152C41BFEBDE300910896 /* FeSpinerApp */;
+			targetProxy = D18152E21BFEBDE400910896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D18152D51BFEBDE300910896 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D18152D61BFEBDE300910896 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D18152DA1BFEBDE300910896 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D18152DB1BFEBDE300910896 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D18152E91BFEBDE400910896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D18152EA1BFEBDE400910896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18152EC1BFEBDE400910896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FeSpinerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D18152ED1BFEBDE400910896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FeSpinerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D18152EF1BFEBDE400910896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FeSpinerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeSpinerApp.app/FeSpinerApp";
+			};
+			name = Debug;
+		};
+		D18152F01BFEBDE400910896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FeSpinerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeSpinerApp.app/FeSpinerApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D18152C01BFEBDE300910896 /* Build configuration list for PBXProject "FeSpinerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18152E91BFEBDE400910896 /* Debug */,
+				D18152EA1BFEBDE400910896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18152EB1BFEBDE400910896 /* Build configuration list for PBXNativeTarget "FeSpinerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18152EC1BFEBDE400910896 /* Debug */,
+				D18152ED1BFEBDE400910896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18152EE1BFEBDE400910896 /* Build configuration list for PBXNativeTarget "FeSpinerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18152EF1BFEBDE400910896 /* Debug */,
+				D18152F01BFEBDE400910896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D18152CF1BFEBDE300910896 /* FeSpinerApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D18152D01BFEBDE300910896 /* FeSpinerApp.xcdatamodel */,
+			);
+			currentVersion = D18152D01BFEBDE300910896 /* FeSpinerApp.xcdatamodel */;
+			path = FeSpinerApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D18152BD1BFEBDE300910896 /* Project object */;
+}

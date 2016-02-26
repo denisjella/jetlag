@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="un3-iM-xUa">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="YZ3-be-MPy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HLr-ul-zlO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rpd-uN-Cjm" kind="relationship" relationship="rootViewController" id="zDQ-xY-RHW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZx-aU-Jd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="58"/>
+        </scene>
+        <!--Select Example-->
+        <scene sceneID="GQM-pj-Y0Y">
+            <objects>
+                <viewController id="Rpd-uN-Cjm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mkm-c4-RuA"/>
+                        <viewControllerLayoutGuide type="bottom" id="VgW-gx-BBd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzN-ZW-p3h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYe-14-UQs">
+                                <rect key="frame" x="49" y="208" width="223" height="30"/>
+                                <state key="normal" title="Using Coordinates">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mkX-rC-sB1" kind="push" id="nPS-9H-bxe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veV-6k-fYx">
+                                <rect key="frame" x="49" y="353" width="223" height="30"/>
+                                <state key="normal" title="Using CLGeocoder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FoU-p0-Thx" kind="push" id="SoM-jo-PgK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Example" id="b4o-Sf-1tC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIF-Jg-UeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="44"/>
+        </scene>
+        <!--Geo Coder-->
+        <scene sceneID="O99-0R-GMx">
+            <objects>
+                <viewController id="FoU-p0-Thx" customClass="GeoCoderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AfM-ii-zgj"/>
+                        <viewControllerLayoutGuide type="bottom" id="x04-3J-KC5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jpR-qh-GmY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter city name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cm2-Wt-qRm">
+                                <rect key="frame" x="20" y="78" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FoU-p0-Thx" id="ecr-lG-9kr"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB4-d3-i5Q">
+                                <rect key="frame" x="0.0" y="116" width="320" height="186"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Geo Coder" id="P9B-yp-4if"/>
+                    <connections>
+                        <outlet property="textField" destination="cm2-Wt-qRm" id="p2v-2v-KI0"/>
+                        <outlet property="textView" destination="yB4-d3-i5Q" id="WyM-jv-rZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtC-to-fEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="460"/>
+        </scene>
+        <!--Time Zones-->
+        <scene sceneID="MuC-uE-9Nj">
+            <objects>
+                <viewController id="mkX-rC-sB1" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sLf-Ak-kUl"/>
+                        <viewControllerLayoutGuide type="bottom" id="qJY-iN-Rh9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCj-XP-Xdv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bvp-y9-aME">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mkX-rC-sB1" id="inx-IM-YhP"/>
+                                </connections>
+                            </mapView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" image="aimImage" translatesAutoresizingMaskIntoConstraints="NO" id="xpl-xM-HHq">
+                                <rect key="frame" x="130" y="254" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZq-7d-aEh">
+                                <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <color key="backgroundColor" white="0.80903477820000003" alpha="0.73999999999999999" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time Zones" id="740-uF-ZM9"/>
+                    <connections>
+                        <outlet property="mapView" destination="Bvp-y9-aME" id="owE-0K-qLT"/>
+                        <outlet property="timeZoneLabel" destination="wZq-7d-aEh" id="ngK-kS-jPu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kh9-I3-Rdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="-360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aimImage" width="60" height="60"/>
+    </resources>
+</document>
